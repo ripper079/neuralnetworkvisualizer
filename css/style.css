@@ -1,0 +1,115 @@
+body {
+	text-align: center;
+	font-family: arial;
+	font-size: 18px;
+}
+
+.header {
+	background: #f4f4f4;
+	border-bottom: #ccc 3px solid;
+	margin-bottom: 5px;
+	padding: 5px;
+}
+
+h1, h3, p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#myCanvas {
+	padding: 15px;
+	margin: 5px;
+	border: #f4f4f4 3px solid;
+}
+
+
+.container-layer {
+	/* Equal width of canvas; 1200 + 30 ; extra for alignment */
+	width: 1230px;
+	/* Center middle */
+	margin: auto;
+	/*Use flexbox */
+	display: flex;
+	color: #ffffff;
+}
+
+.container-node-label {
+	/* Equal width of canvas; 1200 + 30 ; extra for alignment */
+	width: 1230px;
+	/* Center middle */
+	margin: auto;
+	/*Use flexbox */
+	display: flex;	
+	color: #ffffff;
+}
+
+.container-node-input {
+	/* Equal width of canvas; 1200 + 30 ; extra for alignment */
+	width: 1230px;
+	/* Center middle */
+	margin: auto;
+	/*Use flexbox */
+	display: flex;
+}
+
+.all-layer {
+	flex: 1;
+}
+
+.all-node-label {
+	flex: 1;
+}
+
+.all-node-input {
+	flex: 1;	
+}
+
+#input-layer {
+	font-size: 1.3rem;
+	padding-top: 10px;;
+}
+
+.hidden-layer {
+	font-size: 1.1rem;
+}
+
+#foo-output-layer {
+	font-size: 1.1rem;
+	padding-top: 8px;
+}
+
+
+input {
+	text-align: center;
+	/* Form elements, don't like to flex properly */
+	max-width: 100px;
+	border: solid;
+	border-width: thin;
+	font-size: 24px;
+	color: #ffffff;
+	margin-bottom: 2px;
+}
+
+.color-input {
+	background: #0000ff;
+}
+
+.color-hidden {
+	background: #00ff00;
+}
+
+.color-output {
+	background: #ff0000;
+}
+
+#input-node-input input {
+	background: #0000ff;
+}
+
+.hidden-nodes-input input {
+	background: #00ff00;
+}
+
+#output-node-input input{
+	background: #ff0000;
+}
