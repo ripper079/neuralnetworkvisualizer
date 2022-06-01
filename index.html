@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Picture Generator Neural Network Generator</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+	</head>
+
+	<body>
+		<div class="header">
+			<h1>Interactive Neural Network Diagram</h1>
+			<h3 id="helloworld">Generate your own Visual Neural Network Diagram</h2>
+			<p>By Daniel Oikarainen Ver 1.0.0</p>			
+		</div>
+		
+		<div class="container-layer">
+			<div class="all-layer color-input" id="input-layer">Input Layer</div>				
+			<div class="all-layer color-hidden hidden-layer">Hidden Layer #1</div>
+			<div class="all-layer color-hidden hidden-layer">Hidden Layer #2</div>
+			<div class="all-layer color-hidden hidden-layer">Hidden Layer #3</div>
+			<div class="all-layer color-hidden hidden-layer">Hidden Layer #4</div>
+			<div class="all-layer color-hidden hidden-layer">Hidden Layer #5</div>
+			<div class="all-layer color-hidden hidden-layer">Hidden Layer #6</div>
+			<div class="all-layer color-hidden hidden-layer">Hidden Layer #7</div>
+			<div class="all-layer color-hidden hidden-layer">Hidden Layer #8</div>								
+			<div class="all-layer color-output" id="foo-output-layer">Output Layer</div>
+		</div>
+
+		<div class="container-node-label">
+			<div class="all-node-label color-input">Nodes</div>
+			<div class="all-node-label color-hidden">Nodes</div>
+			<div class="all-node-label color-hidden">Nodes</div>
+			<div class="all-node-label color-hidden">Nodes</div>
+			<div class="all-node-label color-hidden">Nodes</div>
+			<div class="all-node-label color-hidden">Nodes</div>
+			<div class="all-node-label color-hidden">Nodes</div>
+			<div class="all-node-label color-hidden">Nodes</div>
+			<div class="all-node-label color-hidden">Nodes</div>
+			<div class="all-node-label color-output">Nodes</div>
+		</div>
+
+		<div class="container-node-input">
+			<div class="all-node-input color-input" id="input-node-input"><input type="number" min="1" max="15" value="1" placeholder="1" id="user_input_first"></input></div>
+			<div class="all-node-input color-hidden hidden-nodes-input"><input type="number" min="1" max="15" value="1" placeholder="1" id="user_hidden_00"></input></div>
+			<div class="all-node-input color-hidden hidden-nodes-input"><input type="number" min="0" max="15" value="1" placeholder="0" id="user_hidden_01"></input></div>
+			<div class="all-node-input color-hidden hidden-nodes-input"><input type="number" min="0" max="15" value="1" placeholder="0" id="user_hidden_02"></input></div>
+			<div class="all-node-input color-hidden hidden-nodes-input"><input type="number" min="0" max="15" value="1" placeholder="0" id="user_hidden_03"></input></div>
+			<div class="all-node-input color-hidden hidden-nodes-input"><input type="number" min="0" max="15" value="1" placeholder="0" id="user_hidden_04"></input></div>
+			<div class="all-node-input color-hidden hidden-nodes-input"><input type="number" min="0" max="15" value="1" placeholder="0" id="user_hidden_05"></input></div>
+			<div class="all-node-input color-hidden hidden-nodes-input"><input type="number" min="0" max="15" value="1" placeholder="0" id="user_hidden_06"></input></div>
+			<div class="all-node-input color-hidden hidden-nodes-input"><input type="number" min="0" max="15" value="1" placeholder="0" id="user_hidden_07"></input></div>
+			<div class="all-node-input color-output" id="output-node-input"><input type="number" min="1" max="15" value="1" placeholder="1" id="user_output_first"></input></div>
+		</div>
+
+
+		<!-- If width or height is specified in css the drawing get distorted-->
+		<canvas id="myCanvas" width="1200" height="600">A Canvas
+		</canvas>	
+		
+		<!-- External JavaScript file - DON'T put any content in the script element!!!!
+		-->
+		<script src="./js/main_draw.js">
+		</script>
+		
+	</body>
+</html>
